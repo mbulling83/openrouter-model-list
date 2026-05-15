@@ -44,7 +44,7 @@ function priceColor(price: string): Color {
   if (isNaN(num) || num === 0) return Color.Green;
   const perMillion = num * 1_000_000;
   if (perMillion <= 1) return Color.Green;
-  if (perMillion <= 10) return Color.Yellow;
+  if (perMillion <= 10) return Color.Orange;
   return Color.Red;
 }
 
